@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+
+  application:
+    name: invoice-api
+    
+#JPA datasource
+  datasource:
+#    url: jdbc:mysql://localhost:3306/invoicetracker
+    url: jdbc:mysql://db-invoicetracker.cr8giztxmcx9.us-east-1.rds.amazonaws.com/invoicetracker
+    username: admin
+    password: adminadmin
+
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
